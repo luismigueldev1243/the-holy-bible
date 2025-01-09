@@ -4,8 +4,6 @@ const verse = document.getElementById('verse')
 const versediv = document.getElementById('versediv')
 const btnsearch = document.getElementById('send')
 const btnzoom = document.getElementById('zoom')
-const btnimg = document.querySelector('img')
-
 let clickvar=0
 btnsearch.addEventListener('click',()=>{
     versediv.innerHTML = ''
@@ -40,8 +38,9 @@ btnzoom.addEventListener('click',()=>{
     }
     if (clickvar == 0){
         versediv.style.fontSize = 30 +'px'
-
+        btnzoom.innerHTML ='<i class="fa-solid fa-magnifying-glass-minus"></i>'
     }else if(clickvar == 1){
         versediv.style.fontSize ='medium'
+        btnzoom.innerHTML = '<i class="fa-solid fa-magnifying-glass-plus"></i>'
     }
 })
