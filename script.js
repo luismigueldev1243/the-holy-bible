@@ -9,7 +9,7 @@ btnsearch.addEventListener('click',()=>{
     versediv.innerHTML = ''
     if (book.value == '' || chapter.value == ''){
      alert('por favor,digite o livro e capitulo,ou até mesmo o versiculo, que deseja ler')
-    }else if(book.value != '' && chapter.value != '' && verse.value == ''){ 
+    }else if(book.value != '' && chapter.value != '' && verse.value != ''){ 
         document.getElementById('errorp').setAttribute('hidden',1)
        
         fetch(`https://bible-api.com/${book.value} ${chapter.value}${verse.value == '' ? '' : ":" + verse.value}?translation=almeida`)
