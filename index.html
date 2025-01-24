@@ -8,11 +8,43 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+
+  <dialog id="other-op-dialog">
+    <button id="close-btn">X</button>
+    <div id="background-div">
+    <p id="escrita-backgroud">cor de fundo: </p>
+    <button id="background-color-btn"><i class="fa-solid fa-arrow-down"></i> branco</button>
+  </div>
+    <button id="help-btn"><i class="fa-solid fa-question"></i></button>
+    <small>ajuda</small>
+  </dialog>
+  <dialog id="help-dialog">
+    <button id="close-help-dialog">X</button><br>
+    <h3>olá</h3><br>
+    <article>
+      bem vindo a aba de ajuda ,onde voce podera entender como usar o site ,vamos lá:<br>
+      como nosso site foi feito de uma forma simples e objetiva nao é uma tarefa tao dificil usa-la,voce podera ver logo em 
+      cima do titulo o botao de OUTRAS OPCOES ,representado por esse icone:<br>
+      <i class="fa-solid fa-bars-staggered"></i><br>
+      clicando nele voce entrara numa aba ,onde podera mudar a cor fundo e entrar na aba de ajuda(essa que voce esta lendo)
+      clicando no botao de cor de fundo voce mudara um pouco a paleta de cores do site ,podendo ser cinza ou branco ,sendo assim,
+      escolha a que preferir .<br>
+      saindo da aba de outras opcoes voce vera tres campos de escritas ,onde devera escrever o livro e o capitulo biblico que deseja 
+      ler ,e se quiser ser mais especifico pode por tambem o versiculo.<br>
+      depois de escolhe-los,clique no botao de pesquisa.é um grande botao verde que tem icone de lupa :<br>
+      <i class="fa-solid fa-magnifying-glass"></i><br>
+      depois de pesquisar há dois caminhos,ou voce tera pesquisado certo e podera ler ,mas se tiver pesquisa com nome errado,capitulos 
+      a mais do que o livro realmente tem,etar sem wify ,entre outros,ele dara um erro ,entao verifique se esta pesquisando corretamente<br>
+      o nosso site tambem tem um botao de zoom ,onde voce pode dar zoom,localizado logo abaixo do botao de pesquisa.<br>
+      sendo assim ,acredito que agora voce ja esteja sem duvidas de como usar nosso site!<br>
+      <h1>deus te abençoe e fica em paz </h1>
+    </article>
+  </dialog>
+    <div id="div-start">
+      <button id="other-options"><i class="fa-solid fa-bars-staggered"></i></button>
     <p id="startTEXT"> |BIBLIA SAGRADA|</p>
     </div>
       <div id="selectors">
-      <label for="biblebooks">livro</label>
       <input type="text" list="book" id="biblebooks" name="book" placeholder="livro:">
       <datalist id="book">
         <option value="Gênesis">
@@ -99,8 +131,9 @@
     <button id="zoom" style="font-size: 17px;"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
     <div id="versediv">
     </div>
-    <p id="errorp" hidden>umm...<br> houve um problema ,verifique se tem conexao com wifi <br> ou veja se escreveu errado<br>(lembre-se dos acentos)</p>    
-
+    <p id="errorp" hidden>umm...<br> houve um problema ,verifique se tem conexao com wifi <br> ou veja se escreveu errado<br>(lembre-se dos acentos)<br>e ate mesmo se o livro e capitulo existem</p>    
+  <small id="direitos" style="margin-top: 40px;">feito por luis miguel ,https://github.com/luismigueldev1243/the-holy-bible</small>
+    
       <script src="script.js"></script>
 </body>
 </html>

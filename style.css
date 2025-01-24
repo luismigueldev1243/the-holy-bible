@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+html{
+    font-size: 10px;
+}
 body{
     font-family: "Roboto Mono", serif;
   font-optical-sizing: auto;
@@ -10,12 +13,63 @@ body{
   justify-content: center;
   
 }
+#close-btn,#close-help-dialog{
+    height: 20px;
+    width: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(198, 198, 198);
+    transition:0.7s ease-in;
+}
+#background-color-btn{
+    height: 20px;
+    width: 90px;
+    background-color: rgb(127, 127, 127);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-right: 0px;
+}
+#escrita-backgroud{
+    margin-bottom: 40px;
+}
+#other-op-dialog{
+    width: 150px;
+    height: 400px;
+    right: 10px;
+    
+    background-color: rgb(80, 80, 80);
+    color: rgb(209, 209, 209);
+    font-size: 1.5rem;
+}
+#background-div{
+    height: 15px;
+    width: 150px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#div-start{
+    height: 40px;
+    width: 100%;
+    display: flex;
+   justify-content: center;
+    margin-bottom: 80px;
+    align-items: center;
+    user-select: none;
+}
+#other-options{
+    position: absolute;
+    right: 10%;
+}
 #startTEXT{
+   
     color: gold;
     font-size: 35px;
-    position: relative;
-    margin-bottom: 80px;
+    align-self: center;
 }
 #selectors{
     z-index: 1;
@@ -28,6 +82,11 @@ body{
     width: 150px;
     margin-bottom:100px ;
     gap: 25px;
+    user-select: none;
+}
+input{
+    border-radius: 6px;
+    border:solid gray 1px;
 }
 #send{
     border: none;
@@ -47,4 +106,43 @@ body{
   margin-top:25px ;
   height: 25px;
   width: 70px;
+}
+#versep{
+    margin-block: 20px;
+}
+#errorp{
+    font-style: 2rem;
+}
+
+#help-dialog{
+    width: 180px;
+    height: fit-content;
+    background-color: rgb(201, 201, 201);
+    color: black;
+    font-size: 15px;
+}
+@media (max-width: 580px){
+    #div-start{
+        height: 110px;
+        width: 100%;
+        display: flex;
+       justify-content: center;
+        margin-bottom: 80px;
+    }
+    #other-options{
+        position: absolute;
+        align-self: first baseline;
+        justify-self:center;
+        margin-top: 10px;
+        width: 22%;
+        left: 39%;
+        right: 39%;
+    }
+    #startTEXT{
+        height: 20px;
+        color: gold;
+        font-size: 9vw;
+        font-weight: 700;
+        margin-top: 75px;
+    }
 }
